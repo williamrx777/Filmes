@@ -1,0 +1,20 @@
+.container{
+  padding: 25px;
+  background-color: black;
+}
+
+.navegacao{
+  display: flex;
+  justify-content: space-around;
+}
+
+.navegacao > a {
+  text-decoration: none;
+  color: white;
+
+}
+
+.imagem{
+  width: 50px;
+  border-radius: 20px;
+}

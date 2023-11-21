@@ -1,0 +1,9 @@
+<app-header></app-header>
+<div class="container">
+  <div class="filme" *ngFor="let filme of filmes">
+    <a href="{{filme.url}}">
+      <img src="{{filme.imagem}}" alt="imagem">
+    </a>
+    <p>{{filme.nome}}</p>
+  </div>
+</div>
