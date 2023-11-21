@@ -7,7 +7,7 @@ import { Filme } from '../models/Home';
   providedIn: 'root'
 })
 export class HomeService {
-  api = 'http://localhost:8080/filmes'
+  api = 'https://wilflix.onrender.com/filmes'
   constructor(private http:HttpClient) { }
 
   get(): Observable<Filme[]> {
