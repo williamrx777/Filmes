@@ -9,10 +9,12 @@ import { HomeService } from 'src/app/service/home.service';
 })
 export class HomeComponent implements OnInit {
   filmes:Filme[] = [];
+  spinner:boolean = false;
   constructor(private home:HomeService) {}
   ngOnInit(): void {
     this.home.get().subscribe((data:Filme[]) => {
       this.filmes = data;
+      this.spinner = true;
     })
   }
 

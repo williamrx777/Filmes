@@ -1,9 +1,14 @@
 <app-header></app-header>
-<div class="container">
+<div class="container-fluid">
   <div class="filme" *ngFor="let filme of filmes">
-    <a href="{{filme.url}}">
-      <img src="{{filme.imagem}}" alt="imagem">
-    </a>
-    <p>{{filme.nome}}</p>
+    <div *ngIf="spinner">
+      <a href="{{filme.url}}">
+        <img src="{{filme.imagem}}" alt="imagem">
+      </a>
+      <p>{{filme.nome}}</p>
+    </div>
   </div>
+</div>
+<div *ngIf="!spinner">
+  <div class="spinner"></div>
 </div>
