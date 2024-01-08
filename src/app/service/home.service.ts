@@ -7,7 +7,7 @@ import { Filme } from '../models/Home';
   providedIn: 'root'
 })
 export class HomeService {
-  api = 'https://filmes-e-animes.williamrx777.repl.co/filmes/filmes-lista/'
+  api = 'https://45858a35-015d-4fd9-b0ac-94c8c115d82e-00-2t7im9d0i248n.kirk.replit.dev/filmes/filmes-lista/'
   constructor(private http:HttpClient) { }
 
   get(): Observable<Filme[]> {
